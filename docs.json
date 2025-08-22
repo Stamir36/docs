@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Курсы от Станисалава 👋",
   "colors": {
     "primary": "#21BCEB",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -68,12 +68,42 @@
         ]
       },
       {
-        "tab": "Стартовый курс",
+        "tab": "Всему есть начало, всему есть конец",
         "groups": [
           {
             "group": "Введение",
             "pages": [
-              "Curse_Start/introduction"
+              "Start/introduction"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Генерация изображений",
+        "groups": [
+          {
+            "group": "Введение в ComfyUI",
+            "pages": [
+              "Comfy/intro",
+              "Comfy/lesson-1-install",
+              "Comfy/lesson-1.1-install"
+            ]
+          },
+          {
+            "group": "Генерация изображений",
+            "pages": [
+              "Comfy/lesson-2-interface-nodes",
+              "Comfy/lesson-3-T2I",
+              "Comfy/lesson-4-prompt",
+              "Comfy/lesson-5-LoRA-Upscale",
+              "Comfy/lesson-6-HirezFix",
+              "Comfy/lesson-7-Test"
+            ]
+          },
+          {
+            "group": "Генерация видео",
+            "pages": [
+              "Comfy/lesson-8-T2V"
             ]
           }
         ]
@@ -82,57 +112,27 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Документация",
+          "href": "http://localhost:3000/Start/introduction",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "ComfyUI в Google Colab",
+          "href": "https://colab.research.google.com/drive/1LA9onaPdpN3qYZwoIyIpSp9Y09GiiceV?usp=sharing",
+          "icon": "pen"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "label": "Чат-бот",
+      "href": "http://localhost:8090"
     }
   }
 }
